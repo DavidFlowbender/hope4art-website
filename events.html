@@ -1,9 +1,18 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Events — Culture Art Academy</title>
+  <title>Events - Culture Art Academy</title>
+  <meta name="description" content="Explore exhibitions, competitions, and outreach events from Culture Art Academy in Lagos." />
+  <meta property="og:title" content="Events - Culture Art Academy" />
+  <meta property="og:description" content="Browse our recent and flagship events, exhibitions, and community projects." />
+  <meta property="og:image" content="LOGO.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Culture Art Academy" />
+  <link rel="icon" href="LOGO.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
   <style>
@@ -49,6 +58,10 @@
     <div class="max-w-3xl mx-auto bg-black/60 p-6 rounded-lg">
       <h1 class="text-5xl font-bold heading-splash">Events & Exhibitions</h1>
       <p class="mt-3 opacity-90">Browse our recent and flagship events.</p>
+      <div class="mt-6 flex items-center justify-center gap-3">
+        <button type="button" onclick="document.getElementById('donateModal').classList.remove('hidden')" class="bg-yellow-400 text-black px-4 py-2 rounded font-semibold">Donate</button>
+        <a href="index.html#contact" class="bg-white text-indigo-700 px-4 py-2 rounded font-semibold">Contact</a>
+      </div>
     </div>
   </section>
 
@@ -59,153 +72,161 @@
       <section id="amuwo">
         <div class="flex items-center justify-between flex-wrap gap-3">
           <h2 class="text-3xl text-green-600 font-bold heading-splash">Amuwo Secondary School Art Competition</h2>
-          <a href="#amuwo-gallery" class="text-sm underline">Jump to gallery ↓</a>
+          <a href="#amuwo-gallery" class="text-sm underline">Jump to gallery -></a>
         </div>
         <p class="mt-3 text-slate-700">
           In partnership with Amuwo Odofin Local Government and the National Council of Arts and Culture, the competition brought students together to celebrate cultural identity, creativity, and resilience.
         </p>
 
         <div id="amuwo-gallery" class="grid gap-4 mt-6 grid-cols-2 md:grid-cols-3">
-          <img src="Amuwo Secondary School Art Competition/1.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Amuwo 1">
-          <img src="Amuwo Secondary School Art Competition/2.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Amuwo 2">
-          <img src="Amuwo Secondary School Art Competition/3.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Amuwo 3">
-          <img src="Amuwo Secondary School Art Competition/4.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Amuwo 4">
-          <img src="Amuwo Secondary School Art Competition/5.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Amuwo 5">
-          <img src="Amuwo Secondary School Art Competition/6.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Amuwo 6">
-          <img src="Amuwo Secondary School Art Competition/7.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Amuwo 7">
-          <img src="Amuwo Secondary School Art Competition/8.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Amuwo 8">
+          <img src="Amuwo Secondary School Art Competition/1.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Amuwo competition artwork 1" loading="lazy" width="400" height="176">
+          <img src="Amuwo Secondary School Art Competition/2.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Amuwo competition artwork 2" loading="lazy" width="400" height="176">
+          <img src="Amuwo Secondary School Art Competition/3.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Amuwo competition artwork 3" loading="lazy" width="400" height="176">
+          <img src="Amuwo Secondary School Art Competition/4.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Amuwo competition artwork 4" loading="lazy" width="400" height="176">
+          <img src="Amuwo Secondary School Art Competition/5.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Amuwo competition artwork 5" loading="lazy" width="400" height="176">
+          <img src="Amuwo Secondary School Art Competition/6.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Amuwo competition artwork 6" loading="lazy" width="400" height="176">
+          <img src="Amuwo Secondary School Art Competition/7.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Amuwo competition artwork 7" loading="lazy" width="400" height="176">
+          <img src="Amuwo Secondary School Art Competition/8.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Amuwo competition artwork 8" loading="lazy" width="400" height="176">
         </div>
+        <p class="mt-3 text-sm text-slate-600 italic">Highlights from the student competition and award moments.</p>
       </section>
 
       <!-- Art Instructor for NCF Summer Camp -->
       <section id="ncf">
         <div class="flex items-center justify-between flex-wrap gap-3">
           <h2 class="text-3xl text-indigo-700 font-bold heading-splash">Art Instructor for NCF Summer Camp</h2>
-          <a href="#ncf-gallery" class="text-sm underline">Jump to gallery ↓</a>
+          <a href="#ncf-gallery" class="text-sm underline">Jump to gallery -></a>
         </div>
         <p class="mt-3 text-slate-700">
-          Hands-on sessions focused on environmental themes—helping campers express conservation ideas through drawing, painting, and mixed media.
+          Hands-on sessions focused on environmental themes - helping campers express conservation ideas through drawing, painting, and mixed media.
         </p>
 
         <div id="ncf-gallery" class="grid gap-4 mt-6 grid-cols-2 md:grid-cols-3">
-          <img src="Art instructor for NCF summer camp/1.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="NCF 1">
-          <img src="Art instructor for NCF summer camp/2.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="NCF 2">
-          <img src="Art instructor for NCF summer camp/3.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="NCF 3">
-          <img src="Art instructor for NCF summer camp/4.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="NCF 4">
+          <img src="Art instructor for NCF summer camp/1.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="NCF summer camp activity 1" loading="lazy" width="400" height="176">
+          <img src="Art instructor for NCF summer camp/2.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="NCF summer camp activity 2" loading="lazy" width="400" height="176">
+          <img src="Art instructor for NCF summer camp/3.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="NCF summer camp activity 3" loading="lazy" width="400" height="176">
+          <img src="Art instructor for NCF summer camp/4.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="NCF summer camp activity 4" loading="lazy" width="400" height="176">
         </div>
+        <p class="mt-3 text-sm text-slate-600 italic">Campers exploring conservation themes through art.</p>
       </section>
 
-      <!-- Art Teachers Exhibition — Maiden Edition -->
+      <!-- Art Teachers Exhibition - Maiden Edition -->
       <section id="teachers">
         <div class="flex items-center justify-between flex-wrap gap-3">
-          <h2 class="text-3xl text-orange-600 font-bold heading-splash">Art Teachers Exhibition — Maiden Edition</h2>
-          <a href="#teachers-gallery" class="text-sm underline">Jump to gallery ↓</a>
+          <h2 class="text-3xl text-orange-600 font-bold heading-splash">Art Teachers Exhibition - Maiden Edition</h2>
+          <a href="#teachers-gallery" class="text-sm underline">Jump to gallery -></a>
         </div>
         <p class="mt-3 text-slate-700">
           A platform for teachers to showcase their creative work while spotlighting conservation, sustainability, and cultural storytelling.
         </p>
 
         <div id="teachers-gallery" class="grid gap-4 mt-6 grid-cols-2 md:grid-cols-3">
-          <img src="Art Teachers Exhibition - maiden edition/1.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Teachers 1">
-          <img src="Art Teachers Exhibition - maiden edition/2.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Teachers 2">
-          <img src="Art Teachers Exhibition - maiden edition/3.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Teachers 3">
-          <img src="Art Teachers Exhibition - maiden edition/4.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Teachers 4">
+          <img src="Art Teachers Exhibition - maiden edition/1.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Art teachers exhibition artwork 1" loading="lazy" width="400" height="176">
+          <img src="Art Teachers Exhibition - maiden edition/2.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Art teachers exhibition artwork 2" loading="lazy" width="400" height="176">
+          <img src="Art Teachers Exhibition - maiden edition/3.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Art teachers exhibition artwork 3" loading="lazy" width="400" height="176">
+          <img src="Art Teachers Exhibition - maiden edition/4.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Art teachers exhibition artwork 4" loading="lazy" width="400" height="176">
         </div>
+        <p class="mt-3 text-sm text-slate-600 italic">Snapshots from the inaugural exhibition showcase.</p>
       </section>
 
-      <!-- Collaboration with The Spotlight Naija — Makoko Riverine Project -->
+      <!-- Collaboration with The Spotlight Naija - Makoko Riverine Project -->
       <section id="spotlight">
         <div class="flex items-center justify-between flex-wrap gap-3">
-          <h2 class="text-3xl text-rose-600 font-bold heading-splash">Collaboration with The Spotlight Naija — Makoko Riverine Project</h2>
-          <a href="#spotlight-gallery" class="text-sm underline">Jump to gallery ↓</a>
+          <h2 class="text-3xl text-rose-600 font-bold heading-splash">Collaboration with The Spotlight Naija - Makoko Riverine Project</h2>
+          <a href="#spotlight-gallery" class="text-sm underline">Jump to gallery -></a>
         </div>
         <p class="mt-3 text-slate-700">
-          In partnership with <strong>The Spotlight Naija</strong>, we brought art education and mentorship to the Makoko Riverine community in Lagos—helping children express hope and imagination through creativity.
+          In partnership with <strong>The Spotlight Naija</strong>, we brought art education and mentorship to the Makoko Riverine community in Lagos - helping children express hope and imagination through creativity.
         </p>
 
         <div id="spotlight-gallery" class="grid gap-4 mt-6 grid-cols-2 md:grid-cols-3">
-          <img src="Collaboration with The SPotlight Naija to teach art and mentor children at the the Makoko Riverine community in Lagos/1.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Makoko 1">
-          <img src="Collaboration with The SPotlight Naija to teach art and mentor children at the the Makoko Riverine community in Lagos/2.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Makoko 2">
-          <img src="Collaboration with The SPotlight Naija to teach art and mentor children at the the Makoko Riverine community in Lagos/3.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Makoko 3">
-          <img src="Collaboration with The SPotlight Naija to teach art and mentor children at the the Makoko Riverine community in Lagos/4.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Makoko 4">
-          <img src="Collaboration with The SPotlight Naija to teach art and mentor children at the the Makoko Riverine community in Lagos/5.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Makoko 5">
+          <img src="Collaboration with The SPotlight Naija to teach art and mentor children at the the Makoko Riverine community in Lagos/1.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Makoko riverine art session 1" loading="lazy" width="400" height="176">
+          <img src="Collaboration with The SPotlight Naija to teach art and mentor children at the the Makoko Riverine community in Lagos/2.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Makoko riverine art session 2" loading="lazy" width="400" height="176">
+          <img src="Collaboration with The SPotlight Naija to teach art and mentor children at the the Makoko Riverine community in Lagos/3.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Makoko riverine art session 3" loading="lazy" width="400" height="176">
+          <img src="Collaboration with The SPotlight Naija to teach art and mentor children at the the Makoko Riverine community in Lagos/4.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Makoko riverine art session 4" loading="lazy" width="400" height="176">
+          <img src="Collaboration with The SPotlight Naija to teach art and mentor children at the the Makoko Riverine community in Lagos/5.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Makoko riverine art session 5" loading="lazy" width="400" height="176">
         </div>
+        <p class="mt-3 text-sm text-slate-600 italic">Moments from art mentoring in the Makoko community.</p>
       </section>
 
       <!-- Hope for Art Foundation Events -->
       <section id="foundation-events">
         <div class="flex items-center justify-between flex-wrap gap-3">
           <h2 class="text-3xl text-pink-600 font-bold heading-splash">Hope for Art Foundation Events</h2>
-          <a href="#foundation-gallery" class="text-sm underline">Jump to gallery ↓</a>
+          <a href="#foundation-gallery" class="text-sm underline">Jump to gallery -></a>
         </div>
         <p class="mt-3 text-slate-700">
-          Outreach activities and showcases powered by the Foundation—where creativity meets purpose.
+          Outreach activities and showcases powered by the Foundation - where creativity meets purpose.
         </p>
 
         <div id="foundation-gallery" class="grid gap-4 mt-6 grid-cols-2 md:grid-cols-3">
-          <img src="Hope for Art foundation events/1.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Foundation 1">
-          <img src="Hope for Art foundation events/2.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Foundation 2">
-          <img src="Hope for Art foundation events/3.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Foundation 3">
-          <img src="Hope for Art foundation events/4.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Foundation 4">
-          <img src="Hope for Art foundation events/5.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Foundation 5">
+          <img src="Hope for Art foundation events/1.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Hope for Art foundation event 1" loading="lazy" width="400" height="176">
+          <img src="Hope for Art foundation events/2.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Hope for Art foundation event 2" loading="lazy" width="400" height="176">
+          <img src="Hope for Art foundation events/3.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Hope for Art foundation event 3" loading="lazy" width="400" height="176">
+          <img src="Hope for Art foundation events/4.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Hope for Art foundation event 4" loading="lazy" width="400" height="176">
+          <img src="Hope for Art foundation events/5.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Hope for Art foundation event 5" loading="lazy" width="400" height="176">
         </div>
+        <p class="mt-3 text-sm text-slate-600 italic">Community outreach and foundation-led showcases.</p>
       </section>
 
       <!-- Olaniyi Atolagbe Solo Exhibition -->
       <section id="olaniyi">
         <div class="flex items-center justify-between flex-wrap gap-3">
           <h2 class="text-3xl text-purple-700 font-bold heading-splash">Olaniyi Atolagbe Solo Exhibition</h2>
-          <a href="#olaniyi-gallery" class="text-sm underline">Jump to gallery ↓</a>
+          <a href="#olaniyi-gallery" class="text-sm underline">Jump to gallery -></a>
         </div>
         <p class="mt-3 text-slate-700">
           A captivating solo exhibition by Olaniyi Atolagbe, highlighting visual storytelling and contemporary Nigerian art.
         </p>
 
         <div id="olaniyi-gallery" class="grid gap-4 mt-6 grid-cols-2 md:grid-cols-3">
-          <img src="Olaniyi Atolagbe solo exhibition/1.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Olaniyi 1">
-          <img src="Olaniyi Atolagbe solo exhibition/2.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Olaniyi 2">
+          <img src="Olaniyi Atolagbe solo exhibition/1.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Olaniyi Atolagbe exhibition artwork 1" loading="lazy" width="400" height="176">
+          <img src="Olaniyi Atolagbe solo exhibition/2.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Olaniyi Atolagbe exhibition artwork 2" loading="lazy" width="400" height="176">
         </div>
+        <p class="mt-3 text-sm text-slate-600 italic">Selections from the solo exhibition showcase.</p>
       </section>
 
       <!-- Our Artwork -->
       <section id="our-artwork">
         <div class="flex items-center justify-between flex-wrap gap-3">
           <h2 class="text-3xl text-fuchsia-700 font-bold heading-splash">Artwork Gallery</h2>
-          <a href="#our-artwork-gallery" class="text-sm underline">Jump to gallery ↓</a>
+          <a href="#our-artwork-gallery" class="text-sm underline">Jump to gallery -></a>
         </div>
         <p class="mt-3 text-slate-700">
-          A curated peek into studio creations—paintings and illustrations that explore culture, city life, rhythm, and identity.
+          A curated peek into studio creations - paintings and illustrations that explore culture, city life, rhythm, and identity.
         </p>
 
         <div id="our-artwork-gallery" class="grid gap-4 mt-6 grid-cols-2 md:grid-cols-3">
-          <img src="Our Artwork/Babajide Sanwo Olu.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Babajide Sanwo Olu artwork">
-          <img src="Our Artwork/Black and white.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Black and white artwork">
-          <img src="Our Artwork/Cherish your craft.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Cherish your craft artwork">
-          <img src="Our Artwork/Ilu.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Ilu artwork">
-          <img src="Our Artwork/Lagos life.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Lagos life artwork">
-          <img src="Our Artwork/Music.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Music artwork">
-          <img src="Our Artwork/Omoge.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Omoge artwork">
-          <img src="Our Artwork/Sisi.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Sisi artwork">
+          <img src="Our Artwork/Babajide Sanwo Olu.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Babajide Sanwo Olu artwork" loading="lazy" width="400" height="176">
+          <img src="Our Artwork/Black and white.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Black and white artwork" loading="lazy" width="400" height="176">
+          <img src="Our Artwork/Cherish your craft.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Cherish your craft artwork" loading="lazy" width="400" height="176">
+          <img src="Our Artwork/Ilu.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Ilu artwork" loading="lazy" width="400" height="176">
+          <img src="Our Artwork/Lagos life.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Lagos life artwork" loading="lazy" width="400" height="176">
+          <img src="Our Artwork/Music.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Music artwork" loading="lazy" width="400" height="176">
+          <img src="Our Artwork/Omoge.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Omoge artwork" loading="lazy" width="400" height="176">
+          <img src="Our Artwork/Sisi.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Sisi artwork" loading="lazy" width="400" height="176">
         </div>
+        <p class="mt-3 text-sm text-slate-600 italic">Selected studio artworks across themes and styles.</p>
       </section>
 
       <!-- Others -->
       <section id="others">
         <div class="flex items-center justify-between flex-wrap gap-3">
-          <h2 class="text-3xl text-teal-700 font-bold heading-splash"></h2>
-          <a href="#others-gallery" class="text-sm underline">Jump to gallery ↓</a>
+          <h2 class="text-3xl text-teal-700 font-bold heading-splash">Other Moments</h2>
+          <a href="#others-gallery" class="text-sm underline">Jump to gallery -></a>
         </div>
         <p class="mt-3 text-slate-700">
           A mixed selection of moments and visuals from various activities and appearances.
         </p>
 
         <div id="others-gallery" class="grid gap-4 mt-6 grid-cols-2 md:grid-cols-3">
-          <img src="Others/1.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Others 1">
-          <img src="Others/2.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Others 2">
-          <img src="Others/3.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Others 3">
-          <img src="Others/4.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Others 4">
-          <img src="Others/5.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Others 5">
+          <img src="Others/1.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Community outreach moment 1" loading="lazy" width="400" height="176">
+          <img src="Others/2.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Community outreach moment 2" loading="lazy" width="400" height="176">
+          <img src="Others/3.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Community outreach moment 3" loading="lazy" width="400" height="176">
+          <img src="Others/4.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Community outreach moment 4" loading="lazy" width="400" height="176">
+          <img src="Others/5.jpg" class="object-cover w-full h-44 cursor-pointer rounded-lg paint-hover" onclick="openImageModal(this.src)" alt="Community outreach moment 5" loading="lazy" width="400" height="176">
         </div>
+        <p class="mt-3 text-sm text-slate-600 italic">More highlights from workshops, visits, and community events.</p>
       </section>
 
 
@@ -214,27 +235,33 @@
 
   <!-- Footer -->
   <footer class="py-6 text-center text-sm text-white bg-gradient-to-r from-indigo-700 via-orange-600 to-green-600">
-    <p>© <span id="year"></span> Culture Art Academy, Lagos.</p>
+    <p>&copy; <span id="year"></span> Culture Art Academy, Lagos.</p>
   </footer>
 
   <!-- Global Image Modal -->
-  <div id="imageModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/90">
-    <button onclick="closeImageModal()" class="absolute top-4 right-6 text-white text-3xl">✕</button>
-    <button onclick="prevImage()" class="absolute left-4 top-1/2 -translate-y-1/2 text-white text-4xl bg-black/40 px-2 rounded-full">‹</button>
+  <div id="imageModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/90" role="dialog" aria-modal="true" aria-labelledby="imageModalTitle">
+    <p id="imageModalTitle" class="sr-only">Image preview</p>
+    <button id="closeImageModal" type="button" onclick="closeImageModal()" class="absolute top-4 right-6 text-white text-3xl" aria-label="Close image viewer">X</button>
+    <button type="button" onclick="prevImage()" class="absolute left-4 top-1/2 -translate-y-1/2 text-white text-base bg-black/40 px-3 py-2 rounded-full" aria-label="Previous image">Prev</button>
     <img id="modalImage" src="" class="max-h-[80vh] w-auto mx-auto rounded-lg shadow-lg" />
-    <button onclick="nextImage()" class="absolute right-4 top-1/2 -translate-y-1/2 text-white text-4xl bg-black/40 px-2 rounded-full">›</button>
+    <button type="button" onclick="nextImage()" class="absolute right-4 top-1/2 -translate-y-1/2 text-white text-base bg-black/40 px-3 py-2 rounded-full" aria-label="Next image">Next</button>
   </div>
 
   <!-- Donate Modal -->
-  <div id="donateModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/70">
+  <div id="donateModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/70" role="dialog" aria-modal="true" aria-labelledby="donateTitle">
     <div class="bg-white rounded-lg p-8 max-w-md w-full text-center">
-      <h3 class="text-2xl font-bold mb-4" style="font-family:'Playfair Display',serif;">Support Our Work</h3>
+      <h3 id="donateTitle" class="text-2xl font-bold mb-4" style="font-family:'Playfair Display',serif;">Support Our Work</h3>
       <p class="text-slate-700">Send donations directly via bank transfer:</p>
-      <p class="mt-2 font-bold">Access Bank</p>
+      <p class="mt-2 font-bold">Guarantee Trust Bank</p>
       <p>Account Name: Culture Art Academy</p>
-      <p>Account Number: <span id="accountNumber">1234567890</span></p>
-      <button onclick="copyAccountNumber()" class="mt-4 px-4 py-2 bg-green-600 text-white rounded-lg">Copy Account Number</button>
-      <button onclick="document.getElementById('donateModal').classList.add('hidden')" class="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg">Close</button>
+      <p>Account Number: <span id="accountNumber">0254620208</span></p>
+      <button type="button" onclick="copyAccountNumber()" class="mt-4 px-4 py-2 bg-green-600 text-white rounded-lg">Copy Account Number</button>
+      <p class="mt-4 bg-yellow-100 border-l-4 border-yellow-500 text-slate-800 p-3 rounded">
+        After your transfer, please send an email to
+        <a href="mailto:culturearta@gmail.com" class="text-indigo-600 font-semibold">culturearta@gmail.com</a>
+        to let us know you donated.
+      </p>
+      <button type="button" onclick="document.getElementById('donateModal').classList.add('hidden')" class="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg">Close</button>
     </div>
   </div>
 
@@ -250,6 +277,7 @@
       currentIndex = gallerySources.indexOf(src);
       document.getElementById('modalImage').src = src;
       document.getElementById('imageModal').classList.remove('hidden');
+      document.getElementById('closeImageModal').focus();
     }
     function closeImageModal() {
       document.getElementById('imageModal').classList.add('hidden');
@@ -263,6 +291,14 @@
       document.getElementById('modalImage').src = gallerySources[currentIndex];
     }
 
+    document.addEventListener('keydown', (event) => {
+      const isOpen = !document.getElementById('imageModal').classList.contains('hidden');
+      if (!isOpen) return;
+      if (event.key === 'Escape') closeImageModal();
+      if (event.key === 'ArrowRight') nextImage();
+      if (event.key === 'ArrowLeft') prevImage();
+    });
+
     function copyAccountNumber() {
       const accountNumber = document.getElementById('accountNumber').textContent;
       navigator.clipboard.writeText(accountNumber);
@@ -271,3 +307,13 @@
   </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
